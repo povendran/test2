@@ -60,7 +60,7 @@ var CompatWebSocketServer = function(options) {
     // autoAcceptConnections is not applicable when bypassing WebSocketServer
     // autoAcceptConnections: false,
     disableNagleAlgorithm: true,
-    closeTimeout: 500
+    closeTimeout: 5000
   };
 
   // Handle the upgrade event ourselves instead of using WebSocketServer
