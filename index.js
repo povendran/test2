@@ -6,7 +6,6 @@
 if ( process.env.NEW_RELIC_HOME ) {
   require("newrelic");
 }
-
 var SAMPLE_STATS_INTERVAL = 60*1000; // 1 minute
 var SAMPLE_LOAD_INTERVAL = 5*60*1000; // 5 minutes
 var EMPTY_ROOM_LOG_TIMEOUT = 3*60*1000; // 3 minutes
@@ -19,7 +18,7 @@ var http = require('http');
 var parseUrl = require('url').parse;
 var fs = require('fs');
 
-// FIXME: not sure what logger to use
+//// FIXME: not sure what logger to use
 //var logger = require('../../lib/logger');
 
 // LOG_LEVEL values:
