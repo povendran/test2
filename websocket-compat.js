@@ -22,7 +22,7 @@ WebSocketRequest.prototype.handleRequestAccepted =
 
 WebSocketRequest.prototype.handleConnectionClose =
   WebSocketServer.prototype.handleConnectionClose;
-  
+
 WebSocketRequest.prototype.broadcastUTF =
   WebSocketServer.prototype.broadcastUTF;
 
@@ -46,7 +46,7 @@ var CompatWebSocketServer = function(options) {
     handleConnection(connection);
   });
 
-  // WebSocket-Node config (modern websocket support)
+   WebSocket-Node config (modern websocket support)
   var wsServerConfig =  {
     // All options *except* 'httpServer' are required when bypassing
     // WebSocketServer.
