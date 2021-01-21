@@ -102,7 +102,7 @@ var CompatWebSocketServer = function(options) {
   // A connection handler for old-style websockets
   handleConnection = function(connection) {
     // fake a request
-    //self.emit('request', new CompatRequest(self, connection));
+    self.emit('request', new CompatRequest(self, connection));
   };
 };
 util.inherits(CompatWebSocketServer, events.EventEmitter);
