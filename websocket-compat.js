@@ -46,7 +46,7 @@ var CompatWebSocketServer = function(options) {
     handleConnection(connection);
   });
 
-   WebSocket-Node config (modern websocket support)
+  // WebSocket-Node config (modern websocket support)
   var wsServerConfig =  {
     // All options *except* 'httpServer' are required when bypassing
     // WebSocketServer.
