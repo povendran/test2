@@ -19,9 +19,10 @@ var WebSocketServer = require('websocket').server;
 WebSocketRequest.prototype.connections = [];
 WebSocketRequest.prototype.handleRequestAccepted =
   WebSocketServer.prototype.handleRequestAccepted;
-  
+
 WebSocketRequest.prototype.handleConnectionClose =
   WebSocketServer.prototype.handleConnectionClose;
+  
 WebSocketRequest.prototype.broadcastUTF =
   WebSocketServer.prototype.broadcastUTF;
 
