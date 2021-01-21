@@ -15,10 +15,11 @@ var WebSocketRequest = require('websocket').request;
 var WebSocketServer = require('websocket').server;
 
 // Copy helpers from WebSocketServer to WebSocketRequest
-
+ 
 WebSocketRequest.prototype.connections = [];
 WebSocketRequest.prototype.handleRequestAccepted =
   WebSocketServer.prototype.handleRequestAccepted;
+  
 WebSocketRequest.prototype.handleConnectionClose =
   WebSocketServer.prototype.handleConnectionClose;
 WebSocketRequest.prototype.broadcastUTF =
