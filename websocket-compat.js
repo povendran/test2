@@ -149,5 +149,5 @@ util.inherits(CompatConnection, events.EventEmitter);
 CompatConnection.prototype.sendUTF = function(message) {
   return this._connection.sendUTF(message);
 };
-
+ 
 module.exports.server = CompatWebSocketServer;
