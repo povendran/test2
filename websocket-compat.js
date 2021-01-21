@@ -123,6 +123,7 @@ CompatRequest.prototype.accept = function(proto, origin) {
   return this._connectionWrapper;
 };
 
+
 var CompatConnection = function(server, connection) {
   var self = this;
   events.EventEmitter.call(this); // superclass constructor
